@@ -99,9 +99,11 @@ const handleSubmit = async () => {
 }
 </script>
 
+
 <template>
-  <div class="bg-white shadow-md p-6 rounded-lg mt-6 container mx-auto">
-  <form @submit.prevent="handleSubmit">
+  <h1 class="text-lg font-bold">Pesan Ticket</h1>
+<div class="flex mb-8">
+ <form @submit.prevent="handleSubmit">
     <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
       <label class="form-control w-full max-w-xs">
         <div class="label">
@@ -128,8 +130,7 @@ const handleSubmit = async () => {
     </div>
 
   </form>
-  </div>
-
+</div>
   <!-- Success Modal -->
   <div v-if="showSuccessModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
       <div class="bg-white p-6 rounded-lg shadow-lg">

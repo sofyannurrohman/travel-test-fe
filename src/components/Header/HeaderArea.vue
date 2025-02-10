@@ -100,14 +100,6 @@ const sidebarStore = useSidebarStore()
             <DarkModeSwitcher />
             <!-- Dark Mode Toggler -->
           </li>
-
-          <!-- Notification Menu Area -->
-          <DropdownNotification />
-          <!-- Notification Menu Area -->
-
-          <!-- Chat Notification Area -->
-          <DropdownMessage />
-          <!-- Chat Notification Area -->
         </ul>
 
         <!-- User Area -->

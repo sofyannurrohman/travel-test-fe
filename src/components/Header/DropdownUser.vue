@@ -1,9 +1,12 @@
 <script setup lang="ts">
+import { useAuthStore } from '@/stores/auth';
 import { onClickOutside } from '@vueuse/core'
-import { ref } from 'vue'
+import { computed, ref } from 'vue'
 
+const authStore = useAuthStore();
 const target = ref(null)
 const dropdownOpen = ref(false)
+const userId = computed(() => authStore.user?.id || 0) // Get user_id from Pinia store
 
 onClickOutside(target, () => {
   dropdownOpen.value = false
@@ -122,7 +125,7 @@ onClickOutside(target, () => {
           </router-link>
         </li>
       </ul>
-      <button
+      <button @click="() => authStore.logout()"
         class="flex items-center gap-3.5 py-4 px-6 text-sm font-medium duration-300 ease-in-out hover:text-primary lg:text-base"
       >
         <svg

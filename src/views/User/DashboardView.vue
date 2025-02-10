@@ -3,7 +3,7 @@
     <HomeNavbar />
     
     <!-- Konten utama -->
-    <div class="flex-grow container mx-auto p-6">
+    <div class="flex-1 container mx-auto ">
       <UserTicketSearch />
       <PromoSlider />
       <TravelDestinationList />

@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-6 container mx-auto">
+  <div class="mt-6 mx-auto">
     <h2 class="text-xl font-bold mb-4">Tujuan Populer</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
       <div v-for="(destination, index) in destinations" :key="index" class="relative">
